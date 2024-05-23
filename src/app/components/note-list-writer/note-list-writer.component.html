@@ -1,0 +1,11 @@
+<p>note-list-writer works!</p>
+
+
+<input [(ngModel)]="username">
+<p>Hello {{username}}!</p>
+<table>
+    <app-note-list [username]="username"   *ngFor="let itemList of itemsList"
+    [item]="itemList">
+
+</app-note-list>
+</table>
